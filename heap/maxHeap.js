@@ -52,6 +52,9 @@ MaxHeap.prototype.heapify = function(index) {
     this.heapify(biggest);
   }
 }
+MaxHeap.prototype.maximum = function() {
+  return this._heap[0];
+}
 MaxHeap.prototype.extractMax = function() {
   if (this._heap.length === 0) {
     throw Error('Heap is empty!');

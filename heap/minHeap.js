@@ -52,6 +52,9 @@ MinHeap.prototype.heapify = function(index) {
     this.heapify(smallest);
   }
 }
+MinHeap.prototype.minimum = function() {
+  return this._heap[0];
+}
 MinHeap.prototype.extractMin = function() {
   if (this._heap.length === 0) {
     throw Error('Heap is empty!');
